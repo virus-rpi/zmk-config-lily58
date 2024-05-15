@@ -16,6 +16,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            label = "Keyboard";
         };
 
         Numbers {
@@ -26,6 +27,8 @@
 &trans   &trans  &trans      &trans      &kp PSCRN  &kp C_VOL_DN     &trans    &trans  &trans    &trans    &trans  &trans     &trans  &trans
                              &trans      &trans     &trans           &mo 3     &mo 3   &trans    &kp RALT  &trans
             >;
+
+            label = "Numbers";
         };
 
         Symbols {
@@ -36,6 +39,8 @@
 &trans   &trans    &trans       &kp BACKSLASH  &kp PLUS   &kp UNDER  &trans    &trans  &trans     &trans    &trans            &kp LBKT  &kp RBKT  &kp TILDE
                                 &trans         &kp LALT   &trans     &mo 3     &mo 3   &trans     &trans    &trans
             >;
+
+            label = "Symbols";
         };
 
         Function {
@@ -46,6 +51,8 @@
 &trans  &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans   &trans
                                     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
+
+            label = "Function";
         };
     };
 };
