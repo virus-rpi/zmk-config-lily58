@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
@@ -18,29 +17,55 @@
             key-positions = <25 24 57>;
             layers = <0>;
         };
+
+        U_200B {
+            bindings = <&U_200B>;
+            key-positions = <10 57>;
+            layers = <0>;
+        };
     };
 
     macros {
         AE: AE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings 
-              = <&macro_press &kp LEFT_ALT> 
-              , <&macro_tap &kp KP_N0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_8>
-              , <&macro_release &kp LEFT_ALT> 
-              ;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
             label = "AE";
         };
 
         AE_Capital: AE_Shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings 
-              = <&macro_press &kp LEFT_ALT> 
-              , <&macro_tap &kp KP_N0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_6>
-              , <&macro_release &kp LEFT_ALT> 
-              ;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
             label = "AE_SHIFT";
+        };
+
+        U_200B: U_200B {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "U_200B";
         };
     };
 
