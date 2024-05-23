@@ -6,7 +6,7 @@
     combos {
         compatible = "zmk,combos";
 
-        Ae {
+        AE {
             bindings = <&AE>;
             key-positions = <25 57>;
             layers = <0>;
@@ -22,6 +22,27 @@
             bindings = <&U_200B>;
             key-positions = <10 57>;
             layers = <0>;
+        };
+
+        UE {
+            bindings = <&UE>;
+            key-positions = <57 19>;
+            layers = <0>;
+        };
+
+        UE_Capital {
+            bindings = <&UE_Capital>;
+            key-positions = <57 19 24>;
+        };
+
+        OE {
+            bindings = <&OE>;
+            key-positions = <57 21>;
+        };
+
+        OE_Capital {
+            bindings = <&OE_Capital>;
+            key-positions = <57 24 21>;
         };
     };
 
@@ -66,6 +87,62 @@
                 <&kp LEFT_ALT>;
 
             label = "U_200B";
+        };
+
+        UE: UE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "UE";
+        };
+
+        UE_Capital: UE_Capital {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "UE_CAPITAL";
+        };
+
+        OE: OE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "OE";
+        };
+
+        OE_Capital: OE_Capital {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "OE_CAPITAL";
         };
     };
 
