@@ -178,6 +178,7 @@
             >;
 
             label = "Numbers";
+            sensor-bindings = <&inc_dec_kp K_NEXT K_BACK>;
         };
 
         Symbols {
