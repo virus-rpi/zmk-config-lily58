@@ -150,6 +150,20 @@
 
             label = "OE_CAPITAL";
         };
+
+        colon_3: colon_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp N3>;
+            label = "COLON_3";
+        };
+
+        hiii_colon_3_send: hiii_colon_3_send {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp H &kp I &kp I &kp I &kp I &kp SPACE &kp COLON &kp N3 &kp RET>;
+            label = "HIII_COLON_3_SEND";
+        };
     };
 
     keymap {
@@ -183,11 +197,11 @@
 
         Symbols {
             bindings = <
-&trans   &trans    &trans       &trans         &trans     &trans                       &trans     &trans    &trans            &trans    &trans    &trans
-&kp TAB  &kp EXCL  &kp AT_SIGN  &kp HASH       &kp DLLR   &kp PRCNT                    &kp CARET  &kp AMPS  &kp KP_MULTIPLY   &kp LPAR  &kp RPAR  &kp DEL
-&trans   &trans    &trans       &kp PIPE       &kp EQUAL  &kp MINUS                    &trans     &kp LT    &kp GREATER_THAN  &kp LBRC  &kp RBRC  &kp GRAVE
-&trans   &trans    &trans       &kp BACKSLASH  &kp PLUS   &kp UNDER  &trans    &trans  &trans     &trans    &trans            &kp LBKT  &kp RBKT  &kp TILDE
-                                &trans         &kp LALT   &trans     &mo 3     &mo 3   &trans     &trans    &trans
+&trans   &trans    &trans       &colon_3       &trans     &trans                       &trans              &trans    &trans            &trans    &trans    &trans
+&kp TAB  &kp EXCL  &kp AT_SIGN  &kp HASH       &kp DLLR   &kp PRCNT                    &kp CARET           &kp AMPS  &kp KP_MULTIPLY   &kp LPAR  &kp RPAR  &kp DEL
+&trans   &trans    &trans       &kp PIPE       &kp EQUAL  &kp MINUS                    &hiii_colon_3_send  &kp LT    &kp GREATER_THAN  &kp LBRC  &kp RBRC  &kp GRAVE
+&trans   &trans    &trans       &kp BACKSLASH  &kp PLUS   &kp UNDER  &trans    &trans  &trans              &trans    &trans            &kp LBKT  &kp RBKT  &kp TILDE
+                                &trans         &kp LALT   &trans     &mo 3     &mo 3   &trans              &trans    &trans
             >;
 
             label = "Symbols";
