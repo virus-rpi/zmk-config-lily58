@@ -177,14 +177,14 @@
         hiii_colon_3_send: hiii_colon_3_send {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp H &kp I &kp I &kp I &kp I &kp SPACE &colon_3 &kp RET>;
+            bindings = <&kp H &kp I &kp I &kp I &kp I &kp SPACE &kp COLON &kp NUMBER_3 &kp RET>;
             label = "HIII_COLON_3_SEND";
         };
 
         hehe_colon_3_send: hehe_colon_3_send {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(H) &kp E &kp H &kp E &kp SPACE &colon_3 &kp RET>;
+            bindings = <&kp LS(H) &kp E &kp H &kp E &kp SPACE &kp COLON &kp NUMBER_3 &kp RET>;
             label = "HEHE_COLON_3_SEND";
         };
 
@@ -198,7 +198,7 @@
         im_alright_send: im_alright {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp SQT &kp M &kp SPACE &kp A &kp L &kp R &kp I &kp G &kp H &kp T &kp SPACE &colon_3 &kp ENTER>;
+            bindings = <&kp I &kp SQT &kp M &kp SPACE &kp A &kp L &kp R &kp I &kp G &kp H &kp T &kp SPACE &kp COLON &kp NUMBER_3 &kp ENTER>;
             label = "IM_ALRIGHT";
         };
 
@@ -271,6 +271,8 @@
 &trans  &trans  &trans     &trans    &trans  &tog 4  &trans    &trans  &trans              &trans  &trans            &trans  &trans  &trans
                            &trans    &trans  &trans  &trans    &trans  &trans              &trans  &trans
             >;
+
+            label = "Phrases";
         };
     };
 };
