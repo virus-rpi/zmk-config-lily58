@@ -257,7 +257,7 @@
 &trans  &trans      &trans          &trans  &trans  &trans                    &trans             &trans  &trans  &trans   &trans   &trans
 &trans  &kp F1      &kp F2          &kp F3  &kp F4  &kp F5                    &kp F6             &kp F7  &kp F8  &kp F9   &kp F10  &trans
 &trans  &bt BT_PRV  &bt BT_NXT      &trans  &trans  &trans                    &ext_power EP_TOG  &trans  &trans  &kp F11  &kp F12  &trans
-&trans  &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &tog 4  &trans    &trans  &trans             &trans  &trans  &trans   &trans   &trans
+&trans  &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &mo 4   &trans    &trans  &trans             &trans  &trans  &trans   &trans   &trans
                                     &trans  &trans  &trans  &trans    &trans  &trans             &trans  &trans
             >;
 
@@ -269,7 +269,7 @@
 &trans  &trans  &trans     &colon_3  &trans  &trans                    &trans              &trans  &trans            &trans  &trans  &trans
 &trans  &trans  &wbu_send  &trans    &trans  &trans                    &trans              &trans  &im_alright_send  &trans  &trans  &trans
 &trans  &trans  &trans     &trans    &trans  &trans                    &hiii_colon_3_send  &trans  &trans            &trans  &trans  &trans
-&trans  &trans  &trans     &trans    &trans  &tog 4  &trans    &trans  &trans              &trans  &trans            &trans  &trans  &trans
+&trans  &trans  &trans     &trans    &trans  &mo 4   &trans    &trans  &trans              &trans  &trans            &trans  &trans  &trans
                            &trans    &trans  &trans  &trans    &trans  &trans              &trans  &trans
             >;
 
