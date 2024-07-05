@@ -67,6 +67,11 @@
             key-positions = <30 16>;
             layers = <4>;
         };
+
+        sharp_s {
+            bindings = <&sharp_s>;
+            key-positions = <57 26>;
+        };
     };
 
     macros {
@@ -208,6 +213,20 @@
             #binding-cells = <0>;
             bindings = <&kp W &kp B &kp U &kp QMARK &kp RET>;
             label = "WBU_SEND";
+        };
+
+        sharp_s: sharp_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SHARP_S";
         };
     };
 
