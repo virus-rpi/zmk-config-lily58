@@ -1,9 +1,0 @@
-#include "lily58.dtsi"
-
-&kscan0 {
-    col-gpios = < &pro_micro 0x13 0x0 >, < &pro_micro 0x12 0x0 >, < &pro_micro 0x4 0x0 >, < &pro_micro 0xe 0x0 >, < &pro_micro 0x10 0x0 >, < &pro_micro 0xa 0x0 >;
-};   
-
-&left_encoder {
-    status = "okay";
-};
